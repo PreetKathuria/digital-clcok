@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(dc.png);
+    background-size: cover ;
+    filter: brightness(1.3);
+}
+
+.digitalclock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 270px;
+    border: 4px black solid;
+    border-radius: 20px;
+    font-family: 'digital';
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-left: 30px;
+    padding-right: 10px;
+    letter-spacing: 30px;
+    text-shadow: 0 0 20px #00ffcc;
+}
+
+span {
+    position: absolute;
+    font-size: xx-small;
+    letter-spacing: 1px;
+    right: 570px;
+    margin-top: 5px;
+}
+
+.num {
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
