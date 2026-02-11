@@ -15,6 +15,13 @@ const updateClock = () => {
     min.textContent = `${mins}`;
     sec.textContent = `${secs}`;
 
+    let period = hours >= 12 ? "PM" : "AM";
+
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    ampm.textContent = period;
+
 }
 
 document.addEventListener("DOMContentLoaded",()=> {
